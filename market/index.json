@@ -47,7 +47,7 @@
   },
   "plugins": [
     {
-      "name": "@quanzaiyu/agnes-media",
+      "name": "@quanzaiyu/dsh-agnes-media",
       "title": {
         "en": "Agnes media",
         "zh": "Agnes 媒体生成"
@@ -84,7 +84,7 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794499876,
+          "publishTimestamp": 1794502672,
           "source": {
             "type": "npm"
           },

@@ -20,7 +20,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: '@quanzaiyu/agnes-media',
+  id: '@quanzaiyu/dsh-agnes-media',
   factory(require) {
     const React = require('react');
     const ReactDOM = require('react-dom');
