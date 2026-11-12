@@ -1,0 +1,6 @@
+# Host half of the Agnes media bundle: one plugin row that owns the composer
+# commands and the credential lookups. The Client half ships in the same
+# package and is mounted by the package manifest, not by this patch.
+- insert:
+    - id: agnes-media
+      name: '@local/agnes-media'

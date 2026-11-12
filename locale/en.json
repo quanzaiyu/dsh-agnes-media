@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agnes media",
+    "description": "Adds text-to-image, image-to-image, text-to-video and image-to-video modes above the composer, backed by the free Agnes AI models."
+  }
+}
