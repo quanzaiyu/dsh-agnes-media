@@ -10,7 +10,13 @@
 
 ## 安装
 
-在 DSH 里用插件管理安装本地目录：
+已发布到 npm（`@quanzaiyu/agnes-media`），推荐直接按包名安装：
+
+```
+plugin_manager install_bundle target=@quanzaiyu/agnes-media
+```
+
+或安装本地目录：
 
 ```
 plugin_manager install_bundle target=<本目录绝对路径>
@@ -21,7 +27,7 @@ plugin_manager install_bundle target=<本目录绝对路径>
 ```yaml
 - insert:
     - id: agnes-media
-      name: '@local/agnes-media'
+      name: '@quanzaiyu/agnes-media'
 ```
 
 安装后无需重启，Host 端会通过 HMR 装载。

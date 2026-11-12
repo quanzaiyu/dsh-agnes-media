@@ -20,7 +20,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: '@local/agnes-media',
+  id: '@quanzaiyu/agnes-media',
   factory(require) {
     const React = require('react');
     const ReactDOM = require('react-dom');

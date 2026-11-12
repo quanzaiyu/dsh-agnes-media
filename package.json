@@ -1,12 +1,26 @@
 {
-  "name": "@local/agnes-media",
+  "name": "@quanzaiyu/agnes-media",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "Agnes AI image and video generation for the Harness composer.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://cnb.cool/quanzaiyu/quanzaiyu/agnes-media.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agnes",
+    "agnes-ai",
+    "text-to-image",
+    "text-to-video",
+    "image-to-image",
+    "image-to-video"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "exports": {
     ".": "./index.js",

@@ -3,4 +3,4 @@
 # package and is mounted by the package manifest, not by this patch.
 - insert:
     - id: agnes-media
-      name: '@local/agnes-media'
+      name: '@quanzaiyu/agnes-media'
