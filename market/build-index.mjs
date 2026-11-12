@@ -1,13 +1,12 @@
 /**
  * Build the format-1 plugin market index for this bundle.
  *
- * The index points at one exact commit of this repository, so an install is
- * reproducible and the market can show compatibility without guessing.
+ * The single version installs from the npm registry, so any DSH can install it
+ * with one click and the npmmirror CDN serves the index file domestically.
  *
  * Usage: node market/build-index.mjs
  */
 
-import { execFileSync } from 'node:child_process'
 import { readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -15,17 +14,16 @@ import { fileURLToPath } from 'node:url'
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
 const read = async (path) => readFile(join(root, path), 'utf8')
 
-/** Repository URL the index installs from, without a trailing `.git`. */
-const REPOSITORY = 'https://github.com/quanzaiyu/agnes-media'
-
 /** DSH versions this build was verified against. */
 const DSH_RANGE = '>=0.2.2-rc.1'
+
+/** Source repository shown on the plugin page. */
+const SOURCE_REPOSITORY = 'https://github.com/quanzaiyu/agnes-media'
 
 const manifest = JSON.parse(await read('package.json'))
 const zh = JSON.parse(await read('locale/zh.json'))
 const en = JSON.parse(await read('locale/en.json'))
 const icon = (await read('icon.svg')).trim()
-const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
 
 const index = {
   format: 1,
@@ -52,8 +50,8 @@ const index = {
       title: { en: en.meta.title, zh: zh.meta.title },
       description: { en: en.meta.description, zh: zh.meta.description },
       author: 'quanzaiyu',
-      homepage: REPOSITORY,
-      repository: { url: REPOSITORY },
+      homepage: SOURCE_REPOSITORY,
+      repository: { url: SOURCE_REPOSITORY },
       icon: `data:image/svg+xml;base64,${Buffer.from(icon, 'utf8').toString('base64')}`,
       metadata: {
         category: 'media',
@@ -65,7 +63,7 @@ const index = {
         {
           version: manifest.version,
           publishTimestamp: Math.floor(Date.now() / 1000),
-          source: { type: 'git', url: REPOSITORY, commit },
+          source: { type: 'npm' },
           engines: { dsh: DSH_RANGE },
         },
       ],
@@ -75,4 +73,4 @@ const index = {
 
 const target = join(root, 'market', 'index.json')
 await writeFile(target, `${JSON.stringify(index, null, 2)}\n`, 'utf8')
-console.log(`wrote ${target} for ${manifest.name}@${manifest.version} at ${commit}`)
+console.log(`wrote ${target} for ${manifest.name}@${manifest.version} (npm source)`)

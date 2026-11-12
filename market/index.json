@@ -84,11 +84,9 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794498880,
+          "publishTimestamp": 1794499876,
           "source": {
-            "type": "git",
-            "url": "https://github.com/quanzaiyu/agnes-media",
-            "commit": "55bdbb4c625d830eea7f1ed5461e9e05fed65723"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"
