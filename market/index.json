@@ -57,9 +57,9 @@
         "zh": "在输入框上方增加文生图、图生图、文生视频、图生视频四个模式，使用 Agnes 免费模型生成图片与视频。"
       },
       "author": "quanzaiyu",
-      "homepage": "https://cnb.cool/quanzaiyu/quanzaiyu/agnes-media",
+      "homepage": "https://github.com/quanzaiyu/agnes-media",
       "repository": {
-        "url": "https://cnb.cool/quanzaiyu/quanzaiyu/agnes-media"
+        "url": "https://github.com/quanzaiyu/agnes-media"
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkFnbmVzIG1lZGlhIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYWduZXMtbWVkaWEtZnJhbWUiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNGM4ZGZmIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4YjVjZjYiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSI2IiB5PSIxMiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjM0IiByeD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2FnbmVzLW1lZGlhLWZyYW1lKSIgc3Ryb2tlLXdpZHRoPSI0IiAvPgogIDxjaXJjbGUgY3g9IjE5IiBjeT0iMjMiIHI9IjUiIGZpbGw9InVybCgjYWduZXMtbWVkaWEtZnJhbWUpIiAvPgogIDxwYXRoIGQ9Ik0xMSA0MWwxMS0xMWE0IDQgMCAwMTUuNyAwTDQ1IDQ3IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjYWduZXMtbWVkaWEtZnJhbWUpIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgLz4KICA8cGF0aCBkPSJNNDYgOGwyLjIgNS40TDU0IDE1LjZsLTUuOCAyLjJMNDYgMjMuMmwtMi4yLTUuNEwzOCAxNS42bDUuOC0yLjJ6IiBmaWxsPSIjZjU5ZTBiIiAvPgogIDxwYXRoIGQ9Ik01NCAyOGwxLjQgMy40TDU5IDMyLjhsLTMuNiAxLjRMNTQgMzcuNmwtMS40LTMuNEw0OSAzMi44bDMuNi0xLjR6IiBmaWxsPSIjZjU5ZTBiIiBvcGFjaXR5PSIwLjg1IiAvPgo8L3N2Zz4=",
       "metadata": {
@@ -84,11 +84,11 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794498531,
+          "publishTimestamp": 1794498880,
           "source": {
             "type": "git",
-            "url": "https://cnb.cool/quanzaiyu/quanzaiyu/agnes-media",
-            "commit": "ed8e71a7c80480da82b0e19c15f3d8c29c05788d"
+            "url": "https://github.com/quanzaiyu/agnes-media",
+            "commit": "55bdbb4c625d830eea7f1ed5461e9e05fed65723"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1"

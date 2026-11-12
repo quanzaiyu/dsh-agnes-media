@@ -16,7 +16,7 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)))
 const read = async (path) => readFile(join(root, path), 'utf8')
 
 /** Repository URL the index installs from, without a trailing `.git`. */
-const REPOSITORY = 'https://cnb.cool/quanzaiyu/quanzaiyu/agnes-media'
+const REPOSITORY = 'https://github.com/quanzaiyu/agnes-media'
 
 /** DSH versions this build was verified against. */
 const DSH_RANGE = '>=0.2.2-rc.1'
